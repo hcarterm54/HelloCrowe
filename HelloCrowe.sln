@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCrowe.App", "HelloCrowe.App\HelloCrowe.App.csproj", "{80F6F535-0A18-40C0-BEF1-4299932ADA76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCrowe.Service", "HelloCrowe.Service\HelloCrowe.Service.csproj", "{094C2E4F-7013-4EA0-868F-418E9BCD39AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCrowe.Service.Test", "HelloCrowe.Service.Test\HelloCrowe.Service.Test.csproj", "{1BB7E47E-0EE5-4CF7-8E12-96D7812BC0D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{80F6F535-0A18-40C0-BEF1-4299932ADA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80F6F535-0A18-40C0-BEF1-4299932ADA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80F6F535-0A18-40C0-BEF1-4299932ADA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094C2E4F-7013-4EA0-868F-418E9BCD39AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094C2E4F-7013-4EA0-868F-418E9BCD39AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094C2E4F-7013-4EA0-868F-418E9BCD39AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094C2E4F-7013-4EA0-868F-418E9BCD39AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB7E47E-0EE5-4CF7-8E12-96D7812BC0D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB7E47E-0EE5-4CF7-8E12-96D7812BC0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB7E47E-0EE5-4CF7-8E12-96D7812BC0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB7E47E-0EE5-4CF7-8E12-96D7812BC0D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

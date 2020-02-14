@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80F6F535-0A18-40C0-BEF1-4299932ADA76}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>HelloCrowe.App</RootNamespace>
-    <AssemblyName>HelloCrowe.App</AssemblyName>
+    <ProjectGuid>{094C2E4F-7013-4EA0-868F-418E9BCD39AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelloCrowe.Service</RootNamespace>
+    <AssemblyName>HelloCrowe.Service</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,18 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="IMessageService.cs" />
+    <Compile Include="MessageServices\ConsoleMessageService.cs" />
+    <Compile Include="MessageServices\InMemoryMessageService.cs" />
+    <Compile Include="MessageServices\MobileMessageService.cs" />
+    <Compile Include="OutputService.cs" />
+    <Compile Include="OutputServices\ConsoleOutput.cs" />
+    <Compile Include="OutputServices\DbOutput.cs" />
+    <Compile Include="OutputServices\FileOutput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceSelector.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HelloCrowe.Service\HelloCrowe.Service.csproj">
-      <Project>{094C2E4F-7013-4EA0-868F-418E9BCD39AE}</Project>
-      <Name>HelloCrowe.Service</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
